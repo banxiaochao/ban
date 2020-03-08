@@ -1,10 +1,6 @@
-from flask import Flask
+from app import create_app
 
-
-app = Flask(__name__)
-app.config.from_object('config')
-
-from app.web import book
+app = create_app()
 
 
 if __name__ == '__main__':
