@@ -12,6 +12,7 @@ jsonify = "*"
 wtforms = "*"
 flask-sqlalchemy = "*"
 cymysql = "*"
+pymysql = "*"
 
 [requires]
 python_version = "3.6"
