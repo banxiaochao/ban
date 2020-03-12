@@ -14,7 +14,7 @@ class BookCollection:
         self.books = []
         self.keyword = ''
 
-    def fill(self,yushu_book,keyword):
+    def fill(self, yushu_book, keyword):
         self.total = yushu_book.total
         self.keyword = keyword
         self.books = [BookViewModel(book) for book in yushu_book.books]
@@ -22,14 +22,14 @@ class BookCollection:
 
 class _BookViewModel:
     @classmethod
-    def package_single(cls,data,keyword):
+    def package_single(cls, data, keyword):
         returned = {
             'books': [],
-            'total':0,
-            'keyword':keyword
+            'total': 0,
+            'keyword': keyword
         }
         if data:
-            returned['total']=1
+            returned['total']= 1
             returned['books'] = [cls.__cut_books_data(data)]
         return returned
 
